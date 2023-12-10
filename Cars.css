@@ -1,0 +1,260 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+.navbar {
+  z-index: 2;
+  position: fixed;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:#A9A9A9;
+  font-weight: bold;
+  height: 6vh;
+  padding: 1vh;
+}
+.img{
+  filter: brightness(60%);
+}
+.logo h1 {
+  color: #fff;
+  margin: 0;
+  font-size: 3vw;
+}
+
+.navbar-links {
+  margin-left: 25vh;
+  list-style: none;
+  display: flex;
+  
+}
+
+.navbar-links a {
+  font-size: 2vw;
+  margin-right: 1vw;
+}
+
+.navbar-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#cart-btn{
+  font-weight: bold;
+  font-size: 2vw;
+  padding: 1vw;
+  border-radius: 1vw;
+  width: 8vw;
+  border: none;
+  margin-right: 4vw;
+}
+.cart{
+  overflow: auto;
+  display: none;
+  position: absolute;
+  top: 8.1vh;
+  left: 0;
+  background-color: white;
+  height: 100vh;
+  width: 100vw;
+}
+.display{
+  display: none;
+}
+@media(max-width: 480px){
+  
+  #cart-btn{
+    font-size: 1vw;
+    margin-right: 4vw;
+  }
+  .display{
+    display: inline;
+    margin-left: 37vh;
+  }
+  
+  .navbar-links{
+    font-size: 2vh;
+    border-radius: 1vh;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 7vh;
+  right: 7vh;
+  text-align: center;
+  justify-content: space-between;
+  background-color: white;
+  box-shadow: 0 0 1vw grey;
+  height: 30vh;
+  font-weight: bold;
+  }
+.clear{
+    display: none;
+  }
+   
+  .navbar-links a{
+    font-size: 2vh;
+    padding: 2vh;
+    font-weight: bold;
+    color: black;
+  }
+}
+/*navbar*/
+
+.cars-section {
+  padding-top: 9vh;
+  background-color: black;
+  color: white;
+}
+
+.container {
+  max-width: 90vw;
+  margin: 0 auto;
+  padding: 2vw;
+}
+
+.section-heading {
+  text-align: center;
+  font-size: 5vh;
+  margin-bottom: 1vh;
+}
+
+.section-text {
+  text-align: center;
+  font-size: 2.5vh;
+  margin-bottom: 2vh;
+}
+
+.car-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.car {
+  flex-basis: 100%;
+  padding: 2vh;
+  text-align: center;
+}
+
+.car-img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1vh;
+}
+
+.car-name {
+  font-size: 2.5vh;
+  margin-bottom: 1vh;
+}
+
+.add-to-cart {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 2vh 4vh;
+  font-size: 2vh;
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .car {
+    flex-basis: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .car {
+    flex-basis: 100%;
+  }
+}
+/*add to cart*/
+.dif{
+  display: inline-block;
+  margin: 3vh;
+  margin-right: 3vh;
+}
+.imag{
+  height: 20vh;
+  width: 20vh;
+  margin: 2vh;
+  display:block;
+}
+.mark{
+  background-color: blue;
+  padding: 1.5vh;
+  color: white;
+  font-size: 2.5vh;
+  font-weight: bold;
+  width: 10vh;
+  border: none;
+  border-radius: 2vh;
+  margin-right: 2vw;
+  cursor: pointer;
+  margin-left: 1vh;
+  transition: .2s;
+}
+.remove{
+  background-color: red;
+    font-size: 2.5vh;
+  font-weight: bold;
+  padding: 1.5vh;
+  border: none;
+  border-radius: 2vh;
+  cursor: pointer;
+  color: white;
+  transition: .2s;
+}
+.mark:click{
+  background-color: white;
+  color: black;
+}
+.remove:click{
+  background-color: white;
+  color: black;
+}
+/*add to cart*/
+
+.slideshow-container {
+  width: 100vw;
+  max-width: 800px; /* adjust width as needed */
+  margin: 0;
+  position: relative;
+  padding: 0;
+    padding-top: 8vh;
+    background-color: black;
+}
+
+.mySlides {
+  display: none;
+}
+
+.mySlides img {
+  margin: 0;
+  width: 80vw;
+  height: 40vh;
+  margin-bottom: 5vh;
+  border-radius: 2vh;
+  margin-left: 5.5vh;
+}
+
+.fade {
+  animation: fadeEffect 3s infinite;
+}
+
+@keyframes fadeEffect {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/*slideshow*/
